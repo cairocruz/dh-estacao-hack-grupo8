@@ -1,0 +1,150 @@
+#menu{
+    text-align: right;
+    word-spacing: 5px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    font-size: larger;
+    display: block;
+    overflow: hidden;
+
+}
+#conteudo{
+    background-color: white;
+    background-size: cover;
+    display: inline-flex;
+    overflow: hidden;
+    height: 100%;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin-right: 5%;
+    display: inline-flex;
+    margin-top: 5%;
+
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+    height: 20%;
+}
+article{
+    text-align: justify;
+    margin-left: 10%;
+}
+body{
+    font-family: 'Lato', Helvetica, sans-serif;
+    background-color: black;
+}
+a:hover{
+    color:red;
+}
+a:visited{
+    color: red;
+}
+#logo{
+    z-index: 2;
+    float: left;
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+header{
+    box-sizing: border-box;
+}
+img{
+    margin-left: 40px;
+    float: left;
+}
+section{
+    padding-top: 5%;
+    padding-bottom: 50%;
+    height: 100%;
+    background-color: white;
+    margin-right: 2%;
+    margin-left: 2%;
+    padding-left: 10%;
+
+}
+h1{
+    text-align: left;
+    margin-right: 30%;
+}
+#viniele{
+    float: left;
+    margin-left: 10%;
+    width: 20%;
+    height: 10%;
+    padding-bottom:30%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom right,  rgba(248, 247, 247, 0.932), rgb(238, 111, 111));
+    
+}
+#daniel{
+    float: left;
+    margin-left: 10%;
+    width: 20%;
+    height: 10%;
+    padding-bottom:30%;
+    margin: 0 auto;
+    box-sizing: border-box;  
+    background-image: linear-gradient(to bottom right,  rgba(248, 247, 247, 0.932), rgb(238, 111, 111));
+
+
+}
+#william{
+    float: left;
+    margin-left: 10%;
+    width: 20%;
+    height: 10%;
+    padding-bottom:30%;
+    margin: 0 auto;
+    box-sizing: border-box;   
+    background-image: linear-gradient(to bottom right,  rgba(248, 247, 247, 0.932), rgb(238, 111, 111));
+
+}
+#cairo{
+    float: left;
+    margin-left: 10%;
+    width: 20%;
+    height: 10%;
+    padding-bottom:30%;
+    margin: 0 auto;
+    box-sizing: border-box;    
+    background-image: linear-gradient(to bottom right,  rgba(248, 247, 247, 0.932), rgb(238, 111, 111));
+    
+}
+.info{
+    padding-bottom: 5%;
+    padding-right: 25%;
+}
+.nos:hover{
+    background-image: linear-gradient(to bottom right,  rgba(238, 180, 180, 0.932), rgb(231, 23, 23));
+    transform: scale(1.5);
+}
+.circle-icons{
+
+    padding: 10px; 
+    font-size: 18px; 
+    width: 18px; 
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px; 
+    border-radius: 50%;  
+    background: #f0e9e9; 
+    color: #fff; 
+}
+  
+.circle-icons:hover{
+  
+      background: rgb(231, 120, 120); 
+      color: rgb(240, 22, 22);    
+      opacity: 0.7; 
+}
+  

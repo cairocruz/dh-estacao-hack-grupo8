@@ -63,12 +63,3 @@ p{
 	background-color: #555258;
 	color: white;
 }
-
-.btn-branco{
-	border: 2px solid white;
-}
-
-.btn-branco:hover{
-	background-color: white;
-	color: black;
-}

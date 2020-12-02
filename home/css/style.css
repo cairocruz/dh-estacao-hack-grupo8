@@ -1,276 +1,65 @@
-body
-{
-    background-color:white;
-    font-family: Arial, Helvetica, sans-serif;
-}
-h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: bisque;
-    font-weight: bold;
-    font-size: xx-large;
-}
-h2
-{
-    text-align: center;
-    color: black;
-    font-weight: bold;
-    font-size: xx-large;
-}
-h3
-{
-    text-align: center;
-    font-weight: bolder;
-    font-size: xx-large;
-}
-p{
-    text-align: center;
-    font-weight: bolder;
-    font-size: x-large;
-}
-.botao
-{
-    color: white;
-    text-decoration: none;
-    padding: 15px 50px;
-    background: black;
-    font-size: 12;
-    border-radius: 3px;
-    font-weight: bold;
-}
-
-.botao:hover
-{
-    background: darkgray;
-    color: white;
-    font-weight: bold;
-}
-/* nave bar*/
-nav{
-    display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-
-	background-color: black;
-}
-nav ul {
-	list-style: none;
-	padding: 0;
-
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-
-	width: 100%;
-}
-
- li {
-	text-align: center;
-	width: 100%;
-}
-
- li a {
-	display: inline-block;
-	padding: 10px 0;
-	width: 100%;
-	text-decoration: none;
-    color:white;
-    font-weight: bold;
-    font-size: xx-large;
-}
-
-li a:hover {
-	color: white;
-	background: darkgray;
-	border-radius: 3px;
-}
-
- li a:active {
-	color:darkgrey;
-	background: white;
-
-}
-
-
-/* fim navbar*/
-
 header
 {
-    background-image: url(../imgs/22-04_ação.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #ffffff;
-
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-
-	text-align: center;
-	padding: 200px;
+    background: url("../imgs/22-04_ação.jpg");
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    padding: 100px;
 }
-header p{
-    margin-bottom: 2em;
-}
-#funcionalidades
+.capa
 {
-    padding: 20px;
-
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-
-	 -webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
+    display: table;
+    width: 100%;
 }
-
-#funcionalidades div{
-    display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-
-	text-align: center;
-	padding-top: 30px;
-}
-#series
+.texto-header
 {
-    display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-
-	padding-top: 20px;
+    text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
 }
-#series h2
+
+h1
 {
- margin-bottom: 20px;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
-#series img
+.center
 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    display: table-cell;
+    vertical-align: middle;
+}
+.mainCenter
+{
+    display: table;
     width: 100%;
 }
 
-/* media querie*/
-@media screen and (min-width: 768px)
-{
-    nav {
-        -webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: row;
-		flex-direction: row;
+p{
+    margin-bottom: 50px;
+}
 
-		-ms-flex-pack: distribute;
-		justify-content: space-around;
-    }
-   nav  ul
-    {
-        -webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: row;
-		flex-direction: row;
+.btn-custom {
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	text-transform: uppercase;
+	transition: background 0.4s, color 0.4s;
 
-		width: 70%; 
-    }
+}
 
-    #funcionalidaes
-    {
-        -webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: row;
-		flex-direction: row;
+.btn-cinza{
+	background: #46434b;
+}
 
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
-
-		-webkit-box-align: start;
-		-ms-flex-align: start;
-		align-items: flex-start;
-
-		max-width: 1000px;
-		margin: 0 auto;
-    }
-    #funcionalidades h2{
-        text-align: center;
-		width: 100%;
-		padding-bottom: 20px;
-    }
-    #funcionalidades div
-    {
-        -webkit-box-flex: 1;
-		-ms-flex-positive: 1;
-		flex-grow: 1;
-
-		-ms-flex-preferred-size: 150px;
-		flex-basis: 150px;
-
-		padding: 0 10px;
-    }
-    #series
-    {
-        -webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: row;
-		flex-direction: row;
-
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
-    }
-    #series h2{
-        width: 100%;
-        text-align: center;
-
-    }
-    #series img 
-    {
-        width: 50%;
-    }
+.btn-cinza:hover{
+	background-color: #555258;
+	color: white;
 }

@@ -2,6 +2,10 @@ nav {
   border-bottom: 0.25em solid var(--warning);
 }
 
+body {
+  background-color: #e9ecef;
+}
+
 footer {
   border-top: 0.25em solid var(--warning);
 }

@@ -2,6 +2,10 @@ nav {
   border-bottom: 0.25em solid var(--warning);
 }
 
+main#resultados {
+  margin-bottom: 100px;
+}
+
 footer {
   border-top: 0.25em solid var(--warning);
 }

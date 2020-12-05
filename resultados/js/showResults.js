@@ -1,4 +1,4 @@
-const API_KEY = '6ab7a07c6c27567d0d32f419dbb3d5f1';
+const API_KEY = '';
 const url = new URL('https://api.themoviedb.org/3/search/movie');
 
 window.addEventListener('load', () => {

@@ -6,6 +6,10 @@ body {
   background-color: #e9ecef;
 }
 
+main {
+  margin-bottom: 100px;
+}
+
 footer {
   border-top: 0.25em solid var(--warning);
 }

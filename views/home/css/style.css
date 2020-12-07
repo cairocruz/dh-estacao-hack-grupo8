@@ -1,0 +1,92 @@
+header {
+  background: url("../img/22-04_ação.jpg");
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  padding: 100px;
+}
+
+.capa {
+  display: table;
+  width: 100%;
+}
+
+.texto-header {
+  text-align: center;
+  color: white;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+h1 {
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.center {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.mainCenter {
+  display: table;
+  width: 100%;
+}
+
+p {
+  margin-bottom: 50px;
+}
+
+.btn-custom {
+  color: white;
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  text-transform: uppercase;
+  transition: background 0.4s, color 0.4s;
+}
+
+.btn-cinza {
+  background: #46434b;
+}
+
+.btn-cinza:hover {
+  background-color: #555258;
+  color: white;
+}
+
+section#exemplos {
+  margin-bottom: 100px;
+}
+
+/* Styles Daniel */
+nav {
+  border-bottom: 0.25em solid var(--warning);
+}
+
+i.fab, i.fas {
+  width: 18px;
+  height: 18px;
+}
+
+footer {
+  border-top: 0.25em solid var(--warning);
+}
+
+footer .circle-icons {
+  padding: 0.5em;
+  margin: 0.25em;
+  border-radius: 50%;
+  background: var(--light);
+  color: var(--dark);
+}
+
+footer .circle-icons:hover {
+  background-color: var(--warning);
+}

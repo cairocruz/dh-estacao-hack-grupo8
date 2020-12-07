@@ -1,0 +1,89 @@
+nav {
+  border-bottom: 0.25em solid var(--warning);
+}
+
+main#resultados {
+  margin-bottom: 100px;
+}
+
+footer {
+  border-top: 0.25em solid var(--warning);
+}
+
+footer .circle-icons {
+  padding: 0.5em;
+  margin: 0.25em;
+  border-radius: 50%;
+  background: var(--light);
+  color: var(--dark);
+}
+
+footer .circle-icons:hover {
+  background-color: var(--warning);
+}
+
+i.fab, i.fas {
+  width: 18px;
+  height: 18px;
+}
+#conteudo{
+  background-size: cover;
+  display: inline-flex;
+  overflow: hidden;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  padding-left:8%;
+  padding-right: 5%;
+  height: 100%;
+  background-color: white;
+  margin: auto;
+  
+}
+
+article{
+  text-align: justify;
+}
+body{
+  font-family: 'Lato', Helvetica, sans-serif;
+  background-color: black;
+}
+
+h1{
+  text-align: left;
+  margin-right: 30%;
+}
+.card{
+  margin-right: 10%;
+  box-sizing: border-box;
+  min-height: 400px;
+}
+
+.info{
+  padding-bottom: 5%;
+  padding-right: 25%;
+}
+.card:hover{
+  background-image: linear-gradient(to bottom right, #eed383, #ffc107);
+  transform: scale(1.1);
+}
+a.btn{
+ color: white;
+ background-color: black;
+
+}
+a.btn:hover{
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+.card-body{
+  min-height: 250px;
+}
+div.col-sm-3{
+  padding: 0;
+}
+div.card{
+  border: none;
+  min-height: 330px;
+  border: solid 1px #ffc107;
+}

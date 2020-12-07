@@ -20,22 +20,33 @@
   <!-- NavBar -->
   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="#"><i class="fas fa-tv mr-3"></i>iShows</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="../home/index.html"
+        ><i class="fas fa-tv mr-3" aria-hidden="true"></i>iShows</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="../home/index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sobre Nós</a>
+            <a class="nav-link" href="../sobre/sobre.html">Sobre Nós</a>
           </li>
         </ul>
-        <form class="form-row my-2" id="searchForm">
+        <form class="form-row my-2" id="searchForm" action="../resultados/index.html">
           <div class="col-auto flex-grow-1">
             <input
               id="searchInput"
@@ -56,37 +67,19 @@
   </nav>
   <!-- NavBar -->
 
-  <main id="infoCompleta">
+  <main>
     <div class="jumbotron jumbotron-fluid mb-0">
       <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-3">
-            <img src="./img/7CQuB71u4fbZzRARJMBLusFd5eL.jpg" alt="..." class="img-thumbnail">
-          </div>
+        <div class="row" id="infoCompleta">
+          <div class="col-12 col-md-6 col-lg-3" id="filmePoster"></div>
 
           <div class="col-12 col-md-6 col-lg-9">
-            <h3 class="h3">The Mandalorian (2019)</h3>
+            <h3 class="h3" id="filmeTitulo"></h3>
 
             <hr class="my-4">
 
             <h5 class="h5">Sinopse</h5>
-            <p>A saga de um guerreiro solitário, que também é um mercenário e pistoleiro, viajando pelos territórios
-              esquecidos e marginais do espaço, logo após a queda do Império e antes da criação da temida Primeira
-              Ordem.</p>
-            <div class="row">
-              <div class="col-4">
-                <h5 class="h5">Network</h5>
-                Disney+
-              </div>
-              <div class="col-4">
-                <h5 class="h5">Temporadas</h5>
-                2
-              </div>
-              <div class="col-4">
-                <h5 class="h5">Situação</h5>
-                Renovada
-              </div>
-            </div>
+            <p id="filmeSinopse"></p>
 
             <hr class="my-4">
 
@@ -131,5 +124,6 @@
   integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/1500b09f5a.js" crossorigin="anonymous"></script>
 <script src="../../js/buscaApi.js"></script>
+<script src="./js/mostrarInfoCompleta.js"></script>
 
 </html>

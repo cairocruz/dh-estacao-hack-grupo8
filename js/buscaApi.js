@@ -1,5 +1,4 @@
 const API_KEY = 'c2370d781f6cf44c41a63364c9a3bf51';
-const url = new URL('https://api.themoviedb.org/3/search/movie');
 
 window.addEventListener('load', () => {
 
@@ -20,6 +19,7 @@ window.addEventListener('load', () => {
 
   // Busca os dados na API
   async function buscaMoviesDBApi(value) {
+    const url = new URL('https://api.themoviedb.org/3/search/movie');
     const params = {
       api_key: API_KEY,
       language: 'pt-BR',

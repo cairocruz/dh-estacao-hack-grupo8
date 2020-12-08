@@ -1,9 +1,15 @@
 
-// Recebe o valor do filmeID
-let filmeId = (new URLSearchParams(window.location.search)).get('id')
-sessionStorage.setItem('filmeId', filmeId)
-
 window.addEventListener('load', () => {
+
+  // Recebe o valor do filmeID
+  let filmeId = (new URLSearchParams(window.location.search)).get('id')
+  
+  if(filmeId == null){
+    bannerNenhumaBusca()
+  } else {
+    sessionStorage.setItem('filmeId', filmeId)
+    buscaInfoCompleta(filmeId)
+  }
 
   // Busca os dados na API
   async function buscaInfoCompleta(id) {
@@ -15,11 +21,8 @@ window.addEventListener('load', () => {
     url.search = new URLSearchParams(params).toString();
     const data = await fetch(url);
     const resultadosBusca = await data.json()
-
     criarInfoCompletaCard(resultadosBusca)
-
   }
-  buscaInfoCompleta(filmeId)
 
   // Cria card com dados do filme
   function criarInfoCompletaCard(filme) {
@@ -48,6 +51,14 @@ window.addEventListener('load', () => {
 
   function createSinopse(sinopse) {
     return (`<p> ${sinopse} </p>`)
+  }
+
+  function bannerNenhumaBusca() {
+    const banner = document.createElement('h4')
+    banner.classList.add('col', 'text-center')
+    banner.innerText = 'Nenhuma busca realizada'
+    document.querySelector('#infoCompleta').innerHTML = ''
+    document.querySelector('#infoCompleta').appendChild(banner)
   }
 
 })
